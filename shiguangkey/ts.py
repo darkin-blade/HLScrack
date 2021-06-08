@@ -9,10 +9,11 @@ class MyGet:
       # "Accept-Language": "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2",
       # "Accept-Encoding": "gzip, deflate, br",
       # "Connection": "keep-alive",
-      "Cookie": "Hm_lvt_7e8b931a9b138d095673181619178304=1623069026,1623156777; token=e491630507100d5621deb494297add77; im-token=e491630507100d5621deb494297add77; aliyungf_tc=cd17ceb8a46854c91f9ae95e4ba47ec8a2c6fbe7f651262b2eaa68dcfc19127e",
+      # "Cookie": "Hm_lvt_7e8b931a9b138d095673181619178304=1623069026,1623156777; token=e491630507100d5621deb494297add77; im-token=e491630507100d5621deb494297add77; aliyungf_tc=cd17ceb8a46854c91f9ae95e4ba47ec8a2c6fbe7f651262b2eaa68dcfc19127e",
       # "Upgrade-Insecure-Requests": "1",
       # "Cache-Control": "max-age=0",
       # "TE": "Trailers",
+      "Cookie": "Hm_lvt_7e8b931a9b138d095673181619178304=1623069026,1623156777; token=e491630507100d5621deb494297add77; im-token=e491630507100d5621deb494297add77;",
     })
 
   def get(self):
