@@ -1,2 +1,2 @@
 combine:
-	python3 combineMP4.py
+	python3 ffmpegCombine.py

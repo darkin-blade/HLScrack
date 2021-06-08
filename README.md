@@ -11,5 +11,3 @@
 - polyv: [保利威](https://www.polyv.net/)视频流的破解
 
 # TODO
-
-- 原生js远程通信

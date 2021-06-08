@@ -3491,11 +3491,12 @@ var my_index = 0;
           });
           // 使用blob加载js
           if (e.bare) return a;
+          console.log(a.text());
           var o = (window.URL || window.webkitURL || window.mozURL || window.msURL).createObjectURL(a),
           s = new window.Worker(o);
-          console.log(a.text());
+          // 从worker接收message
           s.onmessage = function(e) {
-            if (e.data.url) {
+            if (false && e.data.url) {
               my_index ++;
               var a = document.createElement("a");
               a.href = e.data.url;
@@ -3504,7 +3505,6 @@ var my_index = 0;
               URL.revokeObjectURL(a.href);
             }
           }
-          console.log(s.onmessage);
           return s.objectURL = o, s
         }
       }, function (t, e) {
@@ -6778,6 +6778,7 @@ var my_index = 0;
                   t.open("GET", e.url, !0), n(t, e.url)
                 }
                 t.readyState || t.open("GET", e.url, !0)
+                console.log(e.url);
               } catch (i) {
                 return void this.callbacks.onError({
                   code: t.status,
@@ -19701,7 +19702,7 @@ var my_index = 0;
                   n = l.hls302;
                 n && 1 == +n && (i = l.hlsIndex2), s.param.originVid && (i = et.getPreviewHlsUrl(s.vid, i));
                 var a = s.param.appId;
-                console.log(i);
+                // m3u8
                 o.loadSource("".concat(i, "?device=desktop&pid=").concat(c).concat(a ? "&appId=".concat(a) : "")), o.on(v.a.Events.MANIFEST_LOADED, function (t, e) {
                   var i = o.streamController.levels.length;
                   if (i < l.my_br) {
