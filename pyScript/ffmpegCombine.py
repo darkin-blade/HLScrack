@@ -5,7 +5,7 @@ if __name__ == "__main__":
   # 第一个参数为视频数目
   if (len(sys.argv) >= 2):
     videoNum = int(sys.argv[1])
-    videoName = "file '{}.mp4'\n"
+    videoName = "file '5.2{}.mp4'\n"
     listName = "list"
     fd = open(listName, "w") # 如果文件存在则发生错误
     for i in range(videoNum):

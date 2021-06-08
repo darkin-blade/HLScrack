@@ -1,0 +1,361 @@
+# Debug
+
+- get
+
+```json
+{
+  "traceId": "657bcbcc1fa448c19cdeccb4c16215ae",
+  "status": "0",
+  "msg": "success",
+  "data": {
+    "cover": "https://res.shiguangkey.com/file/202004/01/20200401014008876589235.png",
+    "courseType": 5310,
+    "payType": 1,
+    "visibility": 5510,
+    "teachingMethod": 8010,
+    "analysis": 0,
+    "title": "游戏原画角色实战班",
+    "courseId": 11171,
+    "unshelveStatus": 1410,
+    "desc": null
+  }
+}
+```
+
+- getVideoForUser
+
+```json
+{
+  "bizId": "2924434",
+  "version": "1.1.1",
+  "messageId": "20210608210126081592000",
+  "status": 0,
+  "msg": "success",
+  "data": {
+    "activeUrl": "f8f97d17d0400e2bc9f0beed9fd1493f_f",
+    "isNoAuth": 1
+  }
+}
+```
+
+- listChapterInfo
+
+```json
+{
+  "bizId": "",
+  "version": "",
+  "messageId": "20210608210125954875900",
+  "status": 0,
+  "msg": "success",
+  "data": {
+    "courseType": 5310,
+    "startTime": 1610708400000,
+    "endTime": 1615640400000,
+    "list": [{
+      "id": 1085395,
+      "title": "开班典礼",
+      "courseId": 11169,
+      "classId": 41618,
+      "name": "开班典礼",
+      "startTime": 1610708400000,
+      "endTime": 1610715600000,
+      "liveStatus": 6102,
+      "flowerCount": "",
+      "absenteeismFlag": 0,
+      "type": "",
+      "syllabusDetailId": 0,
+      "syllabusDetailParentId": 0,
+      "syllabusDetailParentName": "",
+      "chapterType": 2,
+      "showType": 0,
+      "createTime": "",
+      "videoId": "",
+      "videoScriptId": "",
+      "videoList": [{
+        "vedioId": 427030,
+        "vedioName": "开班典礼_0115_185504",
+        "time": 5342.00,
+        "auditions": 0
+      }]
+    }, {
+      "id": 1085396,
+      "title": "PS基础教学与画笔设置讲解",
+      "courseId": 11169,
+      "classId": 41618,
+      "name": "PS基础教学与画笔设置讲解",
+      "startTime": 1610794800000,
+      "endTime": 1610802000000,
+      "liveStatus": 6102,
+      "flowerCount": "",
+      "absenteeismFlag": 0,
+      "type": "",
+      "syllabusDetailId": 38356,
+      "syllabusDetailParentId": 0,
+      "syllabusDetailParentName": "",
+      "chapterType": 0,
+      "showType": 0,
+      "createTime": "",
+      "videoId": "",
+      "videoScriptId": "",
+      "videoList": [{
+        "vedioId": 428055,
+        "vedioName": "PS基础教学与画笔设置讲解",
+        "time": 7529.00,
+        "auditions": 0
+      }, {
+        "vedioId": 432962,
+        "vedioName": "皮卡皮卡皮卡_0121_184830",
+        "time": 14401.00,
+        "auditions": 0
+      }, {
+        "vedioId": 433830,
+        "vedioName": "皮卡皮卡皮卡丘_0122_185246",
+        "time": 8850.00,
+        "auditions": 0
+      }]
+    }, {
+      "id": 1085397,
+      "title": "如何画的更好看？搭建造型基础",
+      "courseId": 11169,
+      "classId": 41618,
+      "name": "如何画的更好看？搭建造型基础",
+      "startTime": 1611399600000,
+      "endTime": 1611406800000,
+      "liveStatus": 6102,
+      "flowerCount": "",
+      "absenteeismFlag": 0,
+      "type": "",
+      "syllabusDetailId": 38357,
+      "syllabusDetailParentId": 0,
+      "syllabusDetailParentName": "",
+      "chapterType": 0,
+      "showType": 0,
+      "createTime": "",
+      "videoId": "",
+      "videoScriptId": "",
+      "videoList": [{
+        "vedioId": 434198,
+        "vedioName": "如何画的更好看？搭建造型基础",
+        "time": 6820.00,
+        "auditions": 0
+      }, {
+        "vedioId": 435085,
+        "vedioName": "线稿补充",
+        "time": 2131.00,
+        "auditions": 0
+      }, {
+        "vedioId": 439119,
+        "vedioName": "神奇宝贝_0128_185427",
+        "time": 13243.00,
+        "auditions": 0
+      }, {
+        "vedioId": 440079,
+        "vedioName": "神奇宝贝2.0_0129_185855",
+        "time": 8588.00,
+        "auditions": 0
+      }, {
+        "vedioId": 450615,
+        "vedioName": "透视作业",
+        "time": 3565.00,
+        "auditions": 0
+      }]
+    }, {
+      "id": 1085398,
+      "title": "透视的基本原理",
+      "courseId": 11169,
+      "classId": 41618,
+      "name": "透视的基本原理",
+      "startTime": 1612004400000,
+      "endTime": 1612011600000,
+      "liveStatus": 6102,
+      "flowerCount": "",
+      "absenteeismFlag": 0,
+      "type": "",
+      "syllabusDetailId": 38358,
+      "syllabusDetailParentId": 0,
+      "syllabusDetailParentName": "",
+      "chapterType": 0,
+      "showType": 0,
+      "createTime": "",
+      "videoId": "",
+      "videoScriptId": "",
+      "videoList": [{
+        "vedioId": 440313,
+        "vedioName": "透视的基本原理",
+        "time": 7095.00,
+        "auditions": 0
+      }, {
+        "vedioId": 441031,
+        "vedioName": "之恩求来的透视课_0131_190049",
+        "time": 408.00,
+        "auditions": 0
+      }, {
+        "vedioId": 441032,
+        "vedioName": "之恩求来的透视课_0131_191128",
+        "time": 8421.00,
+        "auditions": 0
+      }, {
+        "vedioId": 444690,
+        "vedioName": "透视作业_0204_190101",
+        "time": 7571.00,
+        "auditions": 0
+      }, {
+        "vedioId": 448173,
+        "vedioName": "透视作业0219_0219_190602",
+        "time": 9883.00,
+        "auditions": 0
+      }]
+    }, {
+      "id": 1085399,
+      "title": "立体物体的表现",
+      "courseId": 11169,
+      "classId": 41618,
+      "name": "立体物体的表现",
+      "startTime": 1612609200000,
+      "endTime": 1612616400000,
+      "liveStatus": 6102,
+      "flowerCount": "",
+      "absenteeismFlag": 0,
+      "type": "",
+      "syllabusDetailId": 38359,
+      "syllabusDetailParentId": 0,
+      "syllabusDetailParentName": "",
+      "chapterType": 0,
+      "showType": 0,
+      "createTime": "",
+      "videoId": "",
+      "videoScriptId": "",
+      "videoList": [{
+        "vedioId": 445720,
+        "vedioName": "立体物体的表现",
+        "time": 6833.00,
+        "auditions": 0
+      }, {
+        "vedioId": 446553,
+        "vedioName": "演示_0207_190116",
+        "time": 12810.00,
+        "auditions": 0
+      }, {
+        "vedioId": 450617,
+        "vedioName": "袋子",
+        "time": 5625.00,
+        "auditions": 0
+      }]
+    }, {
+      "id": 1085400,
+      "title": "色彩搭配速成，材质画法大全",
+      "courseId": 11169,
+      "classId": 41618,
+      "name": "色彩搭配速成，材质画法大全",
+      "startTime": 1613818800000,
+      "endTime": 1613826000000,
+      "liveStatus": 6102,
+      "flowerCount": "",
+      "absenteeismFlag": 0,
+      "type": "",
+      "syllabusDetailId": 38360,
+      "syllabusDetailParentId": 0,
+      "syllabusDetailParentName": "",
+      "chapterType": 0,
+      "showType": 0,
+      "createTime": "",
+      "videoId": "",
+      "videoScriptId": "",
+      "videoList": [{
+        "vedioId": 448450,
+        "vedioName": "色彩搭配速成，材质画法大全",
+        "time": 6090.00,
+        "auditions": 0
+      }, {
+        "vedioId": 452680,
+        "vedioName": "球球_0225_194707",
+        "time": 7805.00,
+        "auditions": 0
+      }]
+    }, {
+      "id": 1085401,
+      "title": "头部绘画基础讲解",
+      "courseId": 11169,
+      "classId": 41618,
+      "name": "头部绘画基础讲解",
+      "startTime": 1614423600000,
+      "endTime": 1614430800000,
+      "liveStatus": 6102,
+      "flowerCount": "",
+      "absenteeismFlag": 0,
+      "type": "",
+      "syllabusDetailId": 38361,
+      "syllabusDetailParentId": 0,
+      "syllabusDetailParentName": "",
+      "chapterType": 0,
+      "showType": 0,
+      "createTime": "",
+      "videoId": "",
+      "videoScriptId": "",
+      "videoList": [{
+        "vedioId": 453883,
+        "vedioName": "头部绘画基础讲解",
+        "time": 7209.00,
+        "auditions": 0
+      }, {
+        "vedioId": 458420,
+        "vedioName": "改作业0304_0304_191409",
+        "time": 8676.00,
+        "auditions": 0
+      }]
+    }, {
+      "id": 1085402,
+      "title": "写实风格的五官刻画",
+      "courseId": 11169,
+      "classId": 41618,
+      "name": "写实风格的五官刻画",
+      "startTime": 1615028400000,
+      "endTime": 1615035600000,
+      "liveStatus": 6102,
+      "flowerCount": "",
+      "absenteeismFlag": 0,
+      "type": "",
+      "syllabusDetailId": 38362,
+      "syllabusDetailParentId": 0,
+      "syllabusDetailParentName": "",
+      "chapterType": 0,
+      "showType": 0,
+      "createTime": "",
+      "videoId": "",
+      "videoScriptId": "",
+      "videoList": [{
+        "vedioId": 459510,
+        "vedioName": "写实风格的五官刻画",
+        "time": 7117.00,
+        "auditions": 0
+      }]
+    }, {
+      "id": 1085403,
+      "title": "黑白五小时叠色10分钟",
+      "courseId": 11169,
+      "classId": 41618,
+      "name": "黑白五小时叠色10分钟",
+      "startTime": 1615633200000,
+      "endTime": 1615640400000,
+      "liveStatus": 6102,
+      "flowerCount": "",
+      "absenteeismFlag": 0,
+      "type": "",
+      "syllabusDetailId": 38364,
+      "syllabusDetailParentId": 0,
+      "syllabusDetailParentName": "",
+      "chapterType": 0,
+      "showType": 0,
+      "createTime": "",
+      "videoId": "",
+      "videoScriptId": "",
+      "videoList": [{
+        "vedioId": 466094,
+        "vedioName": "黑白五小时叠色10分钟",
+        "time": 7396.00,
+        "auditions": 0
+      }]
+    }]
+  }
+}
+```

@@ -1,4 +1,6 @@
 var my_index = 0;
+var my_stop = true;
+var my_prefix = "";
 ! function (t, e) {
   if ("object" == typeof exports && "object" == typeof module) module.exports = e();
   else if ("function" == typeof define && define.amd) define([], e);
@@ -3496,11 +3498,11 @@ var my_index = 0;
           s = new window.Worker(o);
           // 从worker接收message
           s.onmessage = function(e) {
-            if (false && e.data.url) {
+            if (!my_stop && e.data.url) {
               my_index ++;
               var a = document.createElement("a");
               a.href = e.data.url;
-              a.download = my_index + ".mp4";
+              a.download = my_prefix + my_index + ".mp4";
               a.click();
               URL.revokeObjectURL(a.href);
             }
@@ -19139,6 +19141,7 @@ var my_index = 0;
         }, {
           key: "initVideo",
           value: function (t) {
+            console.log('initVideo');
             var e = this,
               i = document.createElement("video"),
               n = Object(d.a)(i);
