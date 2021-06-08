@@ -13,7 +13,7 @@ class MyGet:
       # "Upgrade-Insecure-Requests": "1",
       # "Cache-Control": "max-age=0",
       # "TE": "Trailers",
-      "Cookie": "Hm_lvt_7e8b931a9b138d095673181619178304=1623069026,1623156777; token=e491630507100d5621deb494297add77; im-token=e491630507100d5621deb494297add77;",
+      "Cookie": "token=e491630507100d5621deb494297add77;",
     })
 
   def get(self):
