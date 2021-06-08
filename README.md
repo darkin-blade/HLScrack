@@ -9,3 +9,7 @@
 - hls.js: 原[hls.js](https://github.com/video-dev/hls.js)视频流的破解
 
 - polyv: [保利威](https://www.polyv.net/)视频流的破解
+
+# TODO
+
+- 原生js远程通信
