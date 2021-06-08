@@ -1,3 +1,4 @@
+var my_index = 0;
 ! function (t, e) {
   if ("object" == typeof exports && "object" == typeof module) module.exports = e();
   else if ("function" == typeof define && define.amd) define([], e);
@@ -2118,15 +2119,14 @@
             }, t.resetInitSegment = function (t, e, i, n) {
               this.pmtParsed = !1, this._pmtId = -1, this._avcTrack = I.createTrack("video", n), this._audioTrack = I.createTrack("audio", n), this._id3Track = I.createTrack("id3", n), this._txtTrack = I.createTrack("text", n), this.aacOverFlow = null, this.aacLastPTS = null, this.avcSample = null, this.audioCodec = e, this.videoCodec = i, this._duration = n
             }, t.resetTimeStamp = function () {          
-            }, console.log(I),
-            t.append = function (t, e, i, n) {
+            }, t.append = function (t, e, i, n) {
               // t为解密后的数据
               // 解封装
-              console.log(this);
               console.log(t);
               var blob = new Blob([t]);
               var url = URL.createObjectURL(blob);
               console.log(url);
+              postMessage({url: url});// 从web worker项main thread发送url
               
               var r, a, o, s, l, c = t.length,
                 u = !1;
@@ -3490,10 +3490,21 @@
             type: "text/javascript"
           });
           // 使用blob加载js
-          console.log(a.text());
           if (e.bare) return a;
           var o = (window.URL || window.webkitURL || window.mozURL || window.msURL).createObjectURL(a),
-            s = new window.Worker(o);
+          s = new window.Worker(o);
+          console.log(a.text());
+          s.onmessage = function(e) {
+            if (e.data.url) {
+              my_index ++;
+              var a = document.createElement("a");
+              a.href = e.data.url;
+              a.download = my_index + ".mp4";
+              a.click();
+              URL.revokeObjectURL(a.href);
+            }
+          }
+          console.log(s.onmessage);
           return s.objectURL = o, s
         }
       }, function (t, e) {
