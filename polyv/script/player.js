@@ -1,4 +1,3 @@
-var my_t;
 ! function (t, e) {
   if ("object" == typeof exports && "object" == typeof module) module.exports = e();
   else if ("function" == typeof define && define.amd) define([], e);
@@ -2118,9 +2117,12 @@ var my_t;
               }
             }, t.resetInitSegment = function (t, e, i, n) {
               this.pmtParsed = !1, this._pmtId = -1, this._avcTrack = I.createTrack("video", n), this._audioTrack = I.createTrack("audio", n), this._id3Track = I.createTrack("id3", n), this._txtTrack = I.createTrack("text", n), this.aacOverFlow = null, this.aacLastPTS = null, this.avcSample = null, this.audioCodec = e, this.videoCodec = i, this._duration = n
-            }, t.resetTimeStamp = function () {}, t.append = function (t, e, i, n) {
+            }, t.resetTimeStamp = function () {          
+            }, console.log(I),
+            t.append = function (t, e, i, n) {
               // t为解密后的数据
               // 解封装
+              console.log(this);
               console.log(t);
               var blob = new Blob([t]);
               var url = URL.createObjectURL(blob);
@@ -3487,6 +3489,8 @@ var my_t;
           var a = new window.Blob([r], {
             type: "text/javascript"
           });
+          // 使用blob加载js
+          console.log(a.text());
           if (e.bare) return a;
           var o = (window.URL || window.webkitURL || window.mozURL || window.msURL).createObjectURL(a),
             s = new window.Worker(o);
@@ -3549,11 +3553,6 @@ var my_t;
         }
       }, function (t, e, i) {
         // window无定义
-        try {
-          throw Error();
-        } catch(e) {
-          console.log(e);
-        }
         "use strict";
         i.r(e);
         var o = i(9),
