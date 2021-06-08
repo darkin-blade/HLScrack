@@ -2119,7 +2119,8 @@ var my_t;
             }, t.resetInitSegment = function (t, e, i, n) {
               this.pmtParsed = !1, this._pmtId = -1, this._avcTrack = I.createTrack("video", n), this._audioTrack = I.createTrack("audio", n), this._id3Track = I.createTrack("id3", n), this._txtTrack = I.createTrack("text", n), this.aacOverFlow = null, this.aacLastPTS = null, this.avcSample = null, this.audioCodec = e, this.videoCodec = i, this._duration = n
             }, t.resetTimeStamp = function () {}, t.append = function (t, e, i, n) {
-              // 解封装?
+              // t为解密后的数据
+              // 解封装
               console.log(t);
               var blob = new Blob([t]);
               var url = URL.createObjectURL(blob);
